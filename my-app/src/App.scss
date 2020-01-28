@@ -533,7 +533,7 @@ body {
     #navbar-cont {
         display: none;
     }
-    
+
     #skills-coding-cont {
         flex-direction: row;
     }
@@ -683,3 +683,15 @@ body {
     }
 }
 
+@media only screen and (max-height: 750px) {
+    #intro-cont {
+        justify-content: flex-start;
+    }
+
+    #name-name {
+        margin-top: 30px;
+    }
+    #menu-cont {
+        margin-top: 65px;;
+    }
+}
