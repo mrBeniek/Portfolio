@@ -95,14 +95,14 @@ body {
 
 #intro-cont {
     @extend .flex-middle;
-  // background-color: blue;
+  //background-color: blue;
     //border: white solid 5px;
     //border-top-left-radius: 100px;
     //border-bottom-right-radius: 100px;
     
     flex-direction: column;
    
-    max-height: 500px;
+    max-height: 700px;
     width: 100%;
     height: 100%;
     
@@ -141,6 +141,7 @@ body {
     ///////////////
 
 #menu-cont {
+   // background: red;
     display: flex;
     margin-top: 50px;
     justify-content: center;
@@ -528,6 +529,11 @@ body {
 }
 
 @media only screen and (max-width: 1000px) {
+
+    #navbar-cont {
+        display: none;
+    }
+    
     #skills-coding-cont {
         flex-direction: row;
     }
@@ -559,6 +565,14 @@ body {
 }
 
 @media only screen and (max-width: 777px) {
+    #menu-cont {
+        max-height: 120px;
+    }
+
+    .button-std {
+        font-size: 1.3em;
+    }
+
     .projects-tile {
       
         height: 52vw
@@ -572,6 +586,19 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+    #menu-cont {
+        flex-direction: column;
+        align-items: center;
+        max-width: 260px;
+        margin-top: 80px;
+    }
+
+    .button-std {
+        padding: 10px;
+        margin: 5px;
+
+    }
+
     #skills {
         font-size: 0.7em;
     }
@@ -617,7 +644,15 @@ body {
 
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 405px) {
+    #name-name {
+        font-size: 2em;
+    }
+
+    #name-prof {
+        font-size: 0.87em;
+    }
+
     #skills-coding-cont {
         flex-direction: column;
      }
