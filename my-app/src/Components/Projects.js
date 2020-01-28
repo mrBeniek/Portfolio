@@ -8,7 +8,7 @@ import { ProjectOne } from "./ProjectOne";
 export class Projects extends Component {
   render() {
     return (<div id="projects-main-cont">
-      <div className="label-cont">
+      <div className="label-cont label-first-cont">
         <div id="projects">PROJEKTY</div>
       </div>
       <div id="projects-cont">
