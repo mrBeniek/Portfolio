@@ -6,8 +6,8 @@ import githublogo from '../Assets/githublogo.png'
 import linkedinlogo from '../Assets/linkedinlogo.png'
 
 
-export class Contact extends Component {
-  render() {
+export const Contact = () => {
+  
     return (<div id="contact-main-cont">
       <div className="label-cont">
         <div id="contact">KONTAKT</div>
@@ -31,5 +31,5 @@ export class Contact extends Component {
         </a>
       </div>
     </div>);
-  }
+  
 }

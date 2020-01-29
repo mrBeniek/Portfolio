@@ -1,7 +1,7 @@
 import React from 'react';
-import { Component } from 'react';
-export class Navbar extends Component {
-  render() {
+
+export const Navbar = () => {
+  
     return (<div id="navbar-cont">
       
       <div id="navbar-menu-cont">
@@ -10,5 +10,5 @@ export class Navbar extends Component {
         <a className="navbar-button" href="#contact">Kontakt</a>
       </div>
     </div>);
-  }
+  
 }
