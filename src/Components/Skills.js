@@ -1,5 +1,4 @@
 import React from 'react';
-import { Component } from 'react';
 import ES6img from '../Assets/es6.png';
 import HTML5img from '../Assets/html5.png';
 import CSS3img from '../Assets/css3.png';
@@ -8,8 +7,9 @@ import reactimg from '../Assets/react.png';
 import reduximg from '../Assets/redux.png';
 import bootstrapimg from '../Assets/bootstrap.png';
 import gitimg from '../Assets/git.png';
-export class Skills extends Component {
-  render() {
+
+export const Skills = () => {
+  
     return (<div id="skills-main-cont">
       <div className="label-cont">
         <div id="skills">UMIEJĘTNOŚCI</div>
@@ -80,5 +80,5 @@ export class Skills extends Component {
 
       </div>
     </div>);
-  }
+  
 }
