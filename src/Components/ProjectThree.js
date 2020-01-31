@@ -26,8 +26,8 @@ export class ProjectThree extends Component {
 
         </div>
         <div className="projects-button-cont">
-          <a href="#" className="projects-button" style={REMOVE_OPACITY} onMouseEnter={this.handleProjectOn} onMouseLeave={this.props.handleProjectOff}>DEMO</a>
-          <a href="#" className="projects-button" style={REMOVE_OPACITY} onMouseEnter={this.handleProjectOn} onMouseLeave={this.props.handleProjectOff}>KOD ŹRÓDŁOWY</a>
+          <a href="https://determined-saha-924fbd.netlify.com/" target="_blank" rel="noopener noreferrer" className="projects-button" style={REMOVE_OPACITY} onMouseEnter={this.handleProjectOn} onMouseLeave={this.props.handleProjectOff}>DEMO</a>
+          <a href="https://github.com/mrBeniek/Calculator" target="_blank" rel="noopener noreferrer" className="projects-button" style={REMOVE_OPACITY} onMouseEnter={this.handleProjectOn} onMouseLeave={this.props.handleProjectOff}>KOD ŹRÓDŁOWY</a>
         </div>
       </div>
     </div>);
