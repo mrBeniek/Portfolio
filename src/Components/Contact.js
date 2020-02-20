@@ -1,8 +1,8 @@
 import React from 'react';
 import cvlogo from '../Assets/cvlogo.png';
 import gmaillogo from '../Assets/gmaillogo.png';
-import githublogo from '../Assets/githublogo.png'
-import linkedinlogo from '../Assets/linkedinlogo.png'
+import githublogo from '../Assets/githublogo.png';
+import linkedinlogo from '../Assets/linkedinlogo.png';
 
 
 export const Contact = () => {
@@ -12,7 +12,7 @@ export const Contact = () => {
         <div id="contact">KONTAKT</div>
       </div>
       <div id="contact-cont">
-        <a className="contact-panel" href='../Assets/CV - Tomasz Karpeta.pdf' download>
+        <a className="contact-panel" href='./Assets/CV - Tomasz Karpeta.pdf' target="_blank" rel="noopener noreferrer">
           <img className="contact-icon" src={cvlogo} alt="Logo CV" />
           <div>CV</div>
         </a>
