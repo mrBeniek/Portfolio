@@ -1,5 +1,4 @@
 import React from 'react';
-import { Component } from 'react';
 import cvlogo from '../Assets/cvlogo.png';
 import gmaillogo from '../Assets/gmaillogo.png';
 import githublogo from '../Assets/githublogo.png'
@@ -21,11 +20,11 @@ export const Contact = () => {
           <img className="contact-icon" src={gmaillogo} alt="Logo Gmaila" />
           <div>E-mail</div>
         </a>
-        <a  className="contact-panel" href="https://github.com/mrBeniek" target="_blank" rel="noopener noreferrer" >
+        <a  className="contact-panel" href="https://github.com/mrBeniek?tab=repositories" target="_blank" rel="noopener noreferrer" >
           <img className="contact-icon" src={githublogo} alt="Logo GitHuba" />
           <div>GitHub</div>
         </a>
-        <a className="contact-panel" href="https://linkedin.com" target="_blank" rel="noopener noreferrer" >
+        <a className="contact-panel" href="https://linkedin.com/in/tomasz-karpeta-a03299171" target="_blank" rel="noopener noreferrer" >
           <img className="contact-icon" src={linkedinlogo} alt="Logo LinkedIn" />
           <div>LinkedIn</div>
         </a>

@@ -20,7 +20,7 @@ export class ProjectThree extends Component {
           <ul>
             <li>Zachowana kolejność wykonywania działań</li>
             <li>Możliwość działań na liczbach ujemnych</li>
-            <li>Limit znaków</li>
+            <li>Bez użycia funkcji eval()</li>
             <li>Prawidłowe obliczenia na cyfrach dziesiętnych</li>
           </ul>
 
