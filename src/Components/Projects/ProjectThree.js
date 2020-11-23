@@ -1,6 +1,6 @@
 import React from 'react';
 import { Component } from 'react';
-import project3vid from '../Assets/Calculator.mp4';
+import project3vid from '../../Assets/Calculator.mp4';
 
 export class ProjectThree extends Component {
   handleProjectOn = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Component } from 'react';
-import project4vid from '../Assets/Technical.mp4';
+import project4vid from '../../Assets/Technical.mp4';
 export class ProjectFour extends Component {
   handleProjectOn = () => {
     this.props.handleProject("four");

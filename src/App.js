@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.scss';
-import { Navbar } from './Components/Navbar';
-import { Intro } from './Components/Intro';
-import { Projects } from './Components/Projects';
-import { Skills } from './Components/Skills';
-import { Contact } from './Components/Contact';
+import { Navbar } from './Components/Navbar/Navbar';
+import { Intro } from './Components/Intro/Intro';
+import { Projects } from './Components/Projects/Projects';
+import { Skills } from './Components/Skills/Skills';
+import { Contact } from './Components/Contact/Contact';
 
 
   class App extends React.Component {

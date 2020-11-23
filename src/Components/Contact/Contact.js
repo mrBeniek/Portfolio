@@ -1,8 +1,8 @@
 import React from 'react';
-import cvlogo from '../Assets/cvlogo.png';
-import gmaillogo from '../Assets/gmaillogo.png';
-import githublogo from '../Assets/githublogo.png';
-import linkedinlogo from '../Assets/linkedinlogo.png';
+import cvlogo from '../../Assets/cvlogo.png';
+import gmaillogo from '../../Assets/gmaillogo.png';
+import githublogo from '../../Assets/githublogo.png';
+import linkedinlogo from '../../Assets/linkedinlogo.png';
 
 
 export const Contact = () => {

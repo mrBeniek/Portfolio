@@ -1,6 +1,6 @@
 import React from 'react';
 import { Component } from 'react';
-import project1vid from '../Assets/Random Quote Generator.mp4';
+import project1vid from '../../Assets/Random Quote Generator.mp4';
 
 export class ProjectOne extends Component {
   handleProjectOn = () => {
