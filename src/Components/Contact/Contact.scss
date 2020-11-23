@@ -50,3 +50,39 @@
 .contact-panel:hover {
   transform: scale(1.1, 1.1);
 }
+
+@media only screen and (max-width: 1360px) {
+
+  .contact-icon {
+    height: auto;
+    width: 120px;
+    margin: 20px;
+  }
+
+  .contact-panel {
+    max-width: 220px;
+    min-height: 350px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+
+  #contact-cont {
+    flex-direction: column;
+    padding-top: 0px;  
+  }
+
+  .contact-panel {
+    max-width: 220px;
+    min-height: 200px;
+    padding-bottom: 10px;
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  #contact-main-cont {
+      padding-bottom: 20px;
+  }
+}
