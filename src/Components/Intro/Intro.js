@@ -1,3 +1,4 @@
+import './Intro.scss';
 import React from 'react';
 import { Menu } from "./Menu";
 import { Name } from "./Name";

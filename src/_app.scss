@@ -1,0 +1,221 @@
+@font-face {
+  font-family: "Noto Sans";
+  src: url("//db.onlinewebfonts.com/t/2967a3c5ee426de27b245bcbc22ab82f.ttf") format("truetype"), 
+}
+
+@font-face {
+  font-family: "Geosans";
+  src: url('./Assets/Fonts/GeosansLight.ttf') format('truetype');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  //font-family: Roboto;
+  font-family: "Noto Sans";
+  user-select: none;   
+}
+
+.center-text {
+  text-align: center;
+}
+
+.flex-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media only screen and (max-width: 1360px) {
+
+    .projects-row {
+        flex-direction: column;
+        
+    }
+
+    .contact-icon {
+        height: auto;
+        width: 120px;
+        margin: 20px;
+    }
+
+    .contact-panel {
+        max-width: 220px;
+        min-height: 350px;
+    }
+
+
+    
+    
+}
+
+@media only screen and (max-width: 1000px) {
+
+    #navbar-cont {
+        display: none;
+    }
+
+    #skills-coding-cont {
+        flex-direction: row;
+    }
+    .skills-coding-row {
+        flex-direction: column;
+    }
+
+    .skills-coding-panel {
+        margin: 10px;
+    }
+
+    
+
+    #contact-cont {
+       
+        flex-direction: column;
+        padding-top: 0px;
+        
+        
+    }
+
+    .contact-panel {
+        max-width: 220px;
+        min-height: 200px;
+        padding-bottom: 10px;
+        margin: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 777px) {
+    #menu-cont {
+        max-height: 120px;
+    }
+
+    .button-std {
+        font-size: 1.3em;
+    }
+
+    .projects-tile {
+      
+        height: 52vw
+    }
+    
+    
+
+    .projects-button {
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #menu-cont {
+        flex-direction: column;
+        align-items: center;
+        max-width: 260px;
+        margin-top: 80px;
+    }
+
+    .button-std {
+        padding: 10px;
+        margin: 5px;
+
+    }
+
+    #skills {
+        font-size: 0.7em;
+    }
+
+    .label-cont {
+        margin: 25px;
+    }
+
+    .label-first-cont {
+        margin-top: 0;
+    }
+    
+    .skills-coding-panel {
+        min-height: 150px;
+    }
+
+    .coding-icon-cont {
+        min-height: 150px;
+    }
+
+    .coding-icon {
+        width: 90px;
+    }
+    
+    .project-label {
+        font-size: 0.6em;
+    }
+    
+    .projects-li-cont {
+        font-size: 0.4em;
+    }
+
+    .projects-button {
+        font-size: 0.36em;
+        padding: 6px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    #contact-main-cont {
+        padding-bottom: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 405px) {
+    #name-name {
+        font-size: 2em;
+    }
+
+    #name-prof {
+        font-size: 0.87em;
+    }
+
+    #skills-coding-cont {
+        flex-direction: column;
+     }
+
+     .skills-coding-row {
+        margin: 0px;
+     }
+ 
+    .project-label {
+        font-size: 0.5em;
+    }
+    
+    .projects-li-cont {
+        font-size: 0.33em;
+    }
+
+    .projects-button-cont {
+        margin: 0;
+       
+    }
+
+    .projects-button {
+        font-size: 0.3em;
+        padding: 6px;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+    }
+}
+
+@media only screen and (max-height: 750px) {
+    #intro-cont {
+        justify-content: flex-start;
+    }
+
+    #name-name {
+        margin-top: 30px;
+    }
+    #menu-cont {
+        margin-top: 65px;;
+    }
+}

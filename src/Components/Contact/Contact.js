@@ -1,3 +1,4 @@
+import './Contact.scss';
 import React from 'react';
 import cvlogo from '../../Assets/cvlogo.png';
 import gmaillogo from '../../Assets/gmaillogo.png';

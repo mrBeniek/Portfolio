@@ -1,3 +1,4 @@
+import './Skills.scss';
 import React from 'react';
 import ES6img from '../../Assets/es6.png';
 import HTML5img from '../../Assets/html5.png';

@@ -1,0 +1,76 @@
+@import '../../_app.scss';
+
+#skills-main-cont {
+  background: linear-gradient(to right, rgba(30,60,70,1) 0%, rgba(8,30,45,1) 50%, rgba(40,70,85,1) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+#skills-cont {
+  display: flex; 
+  width: 100%;
+  height: 100%;
+}
+
+.skills-label {
+  text-align: center;
+  font-size: 2em;
+}
+
+#skills-coding-cont {
+//  background-color: silver;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.skills-coding-row {
+  //background-color: blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 1500px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.skills-coding-panel {
+  //background-color: yellow;
+  box-shadow: 0px 6px 19px 5px rgba(0,0,0,0.47);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 270px;
+}
+
+.coding-icon-cont {
+  @extend .flex-middle;
+  // background-color: green;
+  height: 100%;
+  min-height: 225px;
+}
+
+.coding-icon {
+  //background: white;
+  height: auto;
+  width: 150px;
+  margin: 30px;
+  transition: 0.5s;
+}
+
+.coding-icon:hover {
+  transform: scale(1.1, 1.1)
+}
+
+.coding-label {
+  margin-bottom: 30px;
+  color: white;
+}
