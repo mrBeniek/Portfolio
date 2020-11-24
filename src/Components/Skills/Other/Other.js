@@ -1,6 +1,7 @@
 import React from 'react';
 import SkillsTile from '../SkillsTile';
-import gitimg from '../../Assets/git.png';
+import gitimg from '../../../Assets/git.png';
+import jiraimg from '../../../Assets/jira.png';
 
 const Other = () => {
   return (
@@ -10,10 +11,13 @@ const Other = () => {
         imgAlt={"Logo GITa"}
         tileTitle={"GIT"}
       />
+      <SkillsTile
+        imgSrc={jiraimg}
+        imgAlt={"Logo Jiry"}
+        tileTitle={"Jira"}
+      />
     </div>
   )
 }
 
 export default Other
-
-

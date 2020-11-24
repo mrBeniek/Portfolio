@@ -6,7 +6,7 @@ import CSS3img from '../../../Assets/css3.png';
 import SCSSimg from '../../../Assets/scss.png';
 import reactimg from '../../../Assets/react.png';
 import reduximg from '../../../Assets/redux.png';
-import bootstrapimg from '../../../Assets/bootstrap.png';
+import antdesignimg from '../../../Assets/antdesign.png';
 
 const Frontend = () => {
   return (
@@ -45,7 +45,7 @@ const Frontend = () => {
           tileTitle={"Redux"}
         />
         <SkillsTile
-          imgSrc={bootstrapimg}
+          imgSrc={antdesignimg}
           imgAlt={"Logo antdesign"}
           tileTitle={"antdesign"}
         />
