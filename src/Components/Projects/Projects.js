@@ -1,6 +1,6 @@
 import './Projects.scss';
 import React, {useState} from 'react';
-import Dropdown from './Dropdown';
+import Dropdown from '../Common/Dropdown';
 import Fullstack from './Fullstack/Fullstack';
 import Frontend from './Frontend/Frontend';
 
