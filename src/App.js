@@ -8,12 +8,12 @@ import { Contact } from './Components/Contact/Contact';
 
 
   class App extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        projectStatus: null,
-      }
-    }
+    // constructor(props) {
+    //   super(props);
+    //   this.state = {
+    //     projectStatus: null,
+    //   }
+    // }
 
     componentDidMount() {
       window.addEventListener("scroll", () => {
@@ -32,26 +32,26 @@ import { Contact } from './Components/Contact/Contact';
       window.removeEventListener("scroll");
     }
 
-    handleProject = (status) => {
-      this.setState ({
-        projectStatus: status
-      })
-    }
+    // handleProject = (status) => {
+    //   this.setState ({
+    //     projectStatus: status
+    //   })
+    // }
 
-    handleProjectOff = () => {
-      this.setState ({
-        projectStatus: null
-      })
-    }
+    // handleProjectOff = () => {
+    //   this.setState ({
+    //     projectStatus: null
+    //   })
+    // }
     
     render() {
       return (<div>
           <Navbar />
           <Intro />
           <Projects 
-           projectStatus={this.state.projectStatus}
-           handleProject={this.handleProject}
-           handleProjectOff={this.handleProjectOff}
+          //  projectStatus={this.state.projectStatus}
+          //  handleProject={this.handleProject}
+          //  handleProjectOff={this.handleProjectOff}
            />
           <Skills />
           <Contact />

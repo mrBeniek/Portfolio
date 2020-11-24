@@ -1,9 +1,10 @@
 import './Projects.scss';
 import React from 'react';
-import { ProjectFour } from "./ProjectFour";
-import { ProjectThree } from "./ProjectThree";
-import { ProjectTwo } from "./ProjectTwo";
-import { ProjectOne } from "./ProjectOne";
+import ProjectTile from './ProjectTile';
+import project1vid from '../../Assets/Random Quote Generator.mp4';
+import project2vid from '../../Assets/Pomodoro.mp4';
+import project3vid from '../../Assets/Calculator.mp4';
+import project4vid from '../../Assets/Technical.mp4';
 
 export const Projects = (props) => {
     return (
@@ -13,12 +14,24 @@ export const Projects = (props) => {
         </div>
         <div id="projects-cont">
           <div className="projects-row">
-            <ProjectOne projectStatus={props.projectStatus} handleProject={props.handleProject} handleProjectOff={props.handleProjectOff} />
-            <ProjectTwo projectStatus={props.projectStatus} handleProject={props.handleProject} handleProjectOff={props.handleProjectOff} />
+            <ProjectTile
+              title={"GENERATOR CYTATÓW"}
+              vid={project1vid}
+            />
+            <ProjectTile 
+              title={"ZEGAR POMODORO"}
+              vid={project2vid}
+            />
           </div>
           <div className="projects-row">
-            <ProjectThree projectStatus={props.projectStatus} handleProject={props.handleProject} handleProjectOff={props.handleProjectOff} />
-            <ProjectFour projectStatus={props.projectStatus} handleProject={props.handleProject} handleProjectOff={props.handleProjectOff} />
+            <ProjectTile
+              title={"KALKULATOR"}
+              vid={project3vid}
+            />
+            <ProjectTile
+              title={"DOKUMENTACJA TECHNICZNA"}
+              vid={project4vid}
+            />
           </div>
         </div>
       </div>
