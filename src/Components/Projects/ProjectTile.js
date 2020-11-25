@@ -27,7 +27,6 @@ const ProjectTile = ({title, vid, modalData}) => {
     <div 
       id="project-one"
       className="projects-tile"
-      onClick={showModal}
     >
       <Modal
         visible={visible}
@@ -37,6 +36,7 @@ const ProjectTile = ({title, vid, modalData}) => {
       />
       <video
         autoPlay muted loop
+        onClick={showModal}
         onMouseEnter={handleProjectOn}
         onMouseLeave={handleProjectOff}
         className={ADD_BLUR}

@@ -21,7 +21,7 @@ const Backend = () => {
       <SkillsTile
         imgSrc={mongoimg}
         imgAlt={"Logo MongoDB"}
-        tileTitle={"MongoDB + Mongoose"}
+        tileTitle={"Mongoose"}
       />
       <SkillsTile
         imgSrc={herokuimg}
