@@ -1,7 +1,7 @@
 import React from 'react';
 import { Dropdown as Drop } from 'antd';
 import { Menu, Button } from 'antd';
-import { DownOutlined } from '@ant-design/icons';
+import { CaretDownOutlined } from '@ant-design/icons';
 
 const Dropdown = ({menuArray, dropState, setDropState}) => {
 
@@ -15,7 +15,7 @@ const Dropdown = ({menuArray, dropState, setDropState}) => {
       color: "white",
        background: "transparent",
        borderColor: "white",
-       border: "1px solid"      
+       border: "1px solid" 
     }}
     >
       {
@@ -27,7 +27,6 @@ const Dropdown = ({menuArray, dropState, setDropState}) => {
               color: "white",
               borderColor: "white",
               textShadow: "1px 1px black"
-               
             }}
             className="menu-item"
           >
@@ -40,16 +39,24 @@ const Dropdown = ({menuArray, dropState, setDropState}) => {
 
   return (
     <div>
-      <Drop overlay={menu}>
+      <Drop overlay={menu}
+        style={
+          {
+            padding: "50px"
+          }
+        }
+      >
         <Button
           size="large"
           style={{
             color: "white",
             borderColor: "white",
-            backgroundColor: "transparent"
+            backgroundColor: "transparent",
+            height: "60px",
+            fontSize: "1.8em"
           }}
         >
-          {dropState} <DownOutlined />
+          {dropState} <CaretDownOutlined style={{fontSize: "0.9em"}} />
         </Button>
       </Drop>
     </div>
