@@ -16,9 +16,9 @@ export const Projects = () => {
         <Dropdown 
           dropState={dropState}
           setDropState={setDropState}
-          menuArray={['fullstack', 'frontend']}
+          menuArray={['FULL STACK', 'FRONT-END']}
         />
-        {dropState === 'fullstack'
+        {dropState === 'FULL STACK'
           ? <Fullstack />
           : <Frontend />
         }

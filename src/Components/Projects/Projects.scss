@@ -34,7 +34,8 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%; 
+  height: 100%;
+  margin-top: 35px
 }
 
 .projects-row {
@@ -75,17 +76,14 @@
   text-shadow: 0px 3px 9px black;
 }
 
-.projects-li-cont {
-  // background-color: yellow;
-  font-size: 0.6em;
-  opacity: 0;
-  z-index: 3;
-  transition: 0.7s;
-}
-
 .projects-button-cont {
   display: flex;
-  margin: 20px;
+  margin: 0px 20px;
+
+  @media only screen and (max-width: 505px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .projects-button {
@@ -129,6 +127,18 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+
+  @media only screen and (max-width: 905px) {
+    flex-direction: column;
+    align-items: center
+  }
+  @media only screen and (max-width: 505px) {
+    padding: 10px
+  }
+}
+
+.modal-text {
+  font-size: 1.2em;
 }
 
 .modal-video {
@@ -136,6 +146,9 @@
   max-width: 400px;
   position: relative;
   margin: 0 30px 0 0;
+  @media only screen and (max-width: 905px) {
+    margin: 0 0 30px 0
+  }
 }
 
 .add-blur {

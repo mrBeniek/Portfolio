@@ -23,7 +23,7 @@ const Modal = ({visible, showModal, vid, modalData}) => {
           </video>
         
           
-          <div>
+          <div className="modal-text">
             {modalData.text}
           </div>
         </div>

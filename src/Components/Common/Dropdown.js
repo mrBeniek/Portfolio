@@ -10,10 +10,27 @@ const Dropdown = ({menuArray, dropState, setDropState}) => {
   }
 
   const menu = (
-    <Menu>
+    <Menu
+    style={{
+      color: "white",
+       background: "transparent",
+       borderColor: "white",
+       border: "1px solid"      
+    }}
+    >
       {
         menuArray.map( val => 
-          <Menu.Item key={val} onClick={() => handleMenu(val)}>
+          <Menu.Item
+            key={val}
+            onClick={() => handleMenu(val)}
+            style={{
+              color: "white",
+              borderColor: "white",
+              textShadow: "1px 1px black"
+               
+            }}
+            className="menu-item"
+          >
             {val}
           </Menu.Item>
         )
@@ -24,7 +41,14 @@ const Dropdown = ({menuArray, dropState, setDropState}) => {
   return (
     <div>
       <Drop overlay={menu}>
-        <Button size="large">
+        <Button
+          size="large"
+          style={{
+            color: "white",
+            borderColor: "white",
+            backgroundColor: "transparent"
+          }}
+        >
           {dropState} <DownOutlined />
         </Button>
       </Drop>

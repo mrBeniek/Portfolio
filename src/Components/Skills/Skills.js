@@ -17,13 +17,13 @@ export const Skills = () => {
         <Dropdown
           dropState={dropState}
           setDropState={setDropState}
-          menuArray={['frontend', 'backend', 'inne']}
+          menuArray={['FRONT-END', 'BACK-END', 'INNE']}
         />
         <div id="skills-cont">
           <div id="skills-coding-cont">
-            {dropState === 'frontend'
+            {dropState === 'FRONT-END'
               ? <Frontend />
-              : dropState === 'backend'
+              : dropState === 'BACK-END'
               ? <Backend />
               : <Other />
             }
