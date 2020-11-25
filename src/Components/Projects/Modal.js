@@ -1,7 +1,7 @@
 import React from 'react';
 import { Modal as AntdModal } from 'antd';
 
-const Modal = ({visible, showModal, vid, modalText}) => {
+const Modal = ({visible, showModal, vid, modalData}) => {
   return (
     
     <React.Fragment>
@@ -24,26 +24,29 @@ const Modal = ({visible, showModal, vid, modalText}) => {
         
           
           <div>
-            {modalText}
+            {modalData.text}
           </div>
         </div>
         <div className="projects-button-cont">
            <a 
-            href="https://vigilant-jackson-000aba.netlify.com/"
+            href={modalData.link}
             target="_blank" 
             rel="noopener noreferrer" 
             className="projects-button" 
           >
             DEMO
           </a>
-          <a 
-            href="https://github.com/mrBeniek/Random-Quote-Generator" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="projects-button"
-          >
-            KOD ŹRÓDŁOWY
-          </a>
+          {modalData.githubLink && 
+            <a 
+              href={modalData.githubLink}
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="projects-button"
+            >
+              KOD ŹRÓDŁOWY
+            </a>
+          }
+          
         </div>
       </AntdModal>
     </React.Fragment>

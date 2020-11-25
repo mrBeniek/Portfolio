@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Modal from './Modal';
 
-const ProjectTile = ({title, vid, modalText}) => {
+const ProjectTile = ({title, vid, modalData}) => {
 
   const [projectStatus, setProjectStatus] = useState(null);
   const [visible, changeVisible] = useState(false);
@@ -33,7 +33,7 @@ const ProjectTile = ({title, vid, modalText}) => {
         visible={visible}
         showModal={showModal}
         vid={vid}
-        modalText={modalText}
+        modalData={modalData}
       />
       <video
         autoPlay muted loop
