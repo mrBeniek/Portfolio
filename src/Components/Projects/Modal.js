@@ -1,37 +1,54 @@
-// <div 
-// className="projects-li-cont" 
-// style={REMOVE_OPACITY} 
-// onMouseEnter={handleProjectOn} 
-// onMouseLeave={handleProjectOff}
-// >
-// <ul>
-//   <li>Losowy kolor co każdy cytat</li>
-//   <li>Specjalny algorytm dający efekt "losowania" cytatu</li>
-//   <li>Fetchowana zewnętrzna baza danych</li>
-//   <li>Możliwość tweetowania cytatów</li>
-// </ul>
-// </div>
-// <div className="projects-button-cont">
-//           <a 
-//             href="https://vigilant-jackson-000aba.netlify.com/"
-//             target="_blank" 
-//             rel="noopener noreferrer" 
-//             className="projects-button" 
-//             style={REMOVE_OPACITY} 
-//             onMouseEnter={handleProjectOn} 
-//             onMouseLeave={handleProjectOff}
-//           >
-//             DEMO
-//           </a>
-//           <a 
-//             href="https://github.com/mrBeniek/Random-Quote-Generator" 
-//             target="_blank" 
-//             rel="noopener noreferrer" 
-//             className="projects-button" 
-//             style={REMOVE_OPACITY} 
-//             onMouseEnter={handleProjectOn} 
-//             onMouseLeave={handleProjectOff}
-//           >
-//             KOD ŹRÓDŁOWY
-//           </a>
-//         </div>
+import React from 'react';
+import { Modal as AntdModal } from 'antd';
+
+const Modal = ({visible, showModal, vid, modalText}) => {
+  return (
+    
+    <React.Fragment>
+      <AntdModal
+        footer={null}
+        visible={visible}
+        onCancel={showModal}
+        centered={true}
+        width={1000}
+        style={{color: "white"}}
+      >
+        <div className="modal-cont">
+        
+        <video
+            autoPlay muted loop
+            className="modal-video"
+          >
+            <source src={vid} type="video/mp4" />
+          </video>
+        
+          
+          <div>
+            {modalText}
+          </div>
+        </div>
+        <div className="projects-button-cont">
+           <a 
+            href="https://vigilant-jackson-000aba.netlify.com/"
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="projects-button" 
+          >
+            DEMO
+          </a>
+          <a 
+            href="https://github.com/mrBeniek/Random-Quote-Generator" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="projects-button"
+          >
+            KOD ŹRÓDŁOWY
+          </a>
+        </div>
+      </AntdModal>
+    </React.Fragment>
+    
+  )
+}
+
+export default Modal

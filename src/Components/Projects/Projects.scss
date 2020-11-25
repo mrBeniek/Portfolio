@@ -85,7 +85,7 @@
 
 .projects-button-cont {
   display: flex;
-  margin: 10px;
+  margin: 20px;
 }
 
 .projects-button {
@@ -95,18 +95,16 @@
   border-radius: 5px;
   box-shadow: 0px 6px 19px 5px rgba(0,0,0,0.47);
   cursor: pointer;
-  font-size: 0.5em;
+  font-size: 1em;
   text-align: center;
   margin: 10px 50px 10px 50px;
-  padding: 10px;
+  padding: 20px;
   padding-left: 50px;
   padding-right: 50px;
   width: 100%;
   text-decoration: none;
   color: white;
   z-index: 3;
-  opacity: 0;
-  transition: opacity 0.7s;
 }
 
 .project-video {
@@ -120,6 +118,24 @@
   height: auto;
   z-index: 1;
   transition: 0.7s;
+}
+
+.modal-cont {
+  box-shadow: 0px 6px 19px 5px rgba(0,0,0,0.47);
+  margin: 30px 0px;
+  padding: 50px;
+  border-radius: 5px;
+  background-color: #274652;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.modal-video {
+  @extend .project-video;
+  max-width: 400px;
+  position: relative;
+  margin: 0 30px 0 0;
 }
 
 .add-blur {

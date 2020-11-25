@@ -1,8 +1,15 @@
 import React, {useState} from 'react';
+import Modal from './Modal';
 
-const ProjectTile = ({title, vid}) => {
+const ProjectTile = ({title, vid, modalText}) => {
 
   const [projectStatus, setProjectStatus] = useState(null);
+  const [visible, changeVisible] = useState(false);
+
+  const showModal = () => {
+    if (visible) {changeVisible(false)}
+    else {changeVisible(true)}
+  };
 
   const handleProjectOn = () => {
     setProjectStatus(true);
@@ -17,7 +24,17 @@ const ProjectTile = ({title, vid}) => {
   const REMOVE_OPACITY = projectStatus && { opacity: 1 };
 
   return (
-    <div id="project-one" className="projects-tile">
+    <div 
+      id="project-one"
+      className="projects-tile"
+      onClick={showModal}
+    >
+      <Modal
+        visible={visible}
+        showModal={showModal}
+        vid={vid}
+        modalText={modalText}
+      />
       <video
         autoPlay muted loop
         onMouseEnter={handleProjectOn}
