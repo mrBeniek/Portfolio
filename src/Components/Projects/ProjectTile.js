@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Modal from './Modal';
 
-const ProjectTile = ({title, vid, modalData}) => {
+const ProjectTile = ({title, tileImg, vid, modalData}) => {
 
   const [projectStatus, setProjectStatus] = useState(null);
   const [visible, changeVisible] = useState(false);
@@ -34,21 +34,23 @@ const ProjectTile = ({title, vid, modalData}) => {
         vid={vid}
         modalData={modalData}
       />
-      <video
+      <img
+        src={tileImg}
+        alt={title}
         autoPlay muted loop
         onClick={showModal}
         onMouseEnter={handleProjectOn}
         onMouseLeave={handleProjectOff}
         className={ADD_BLUR}
-      >
-        <source src={vid} type="video/mp4" />
-      </video>
+      />
+        
       <div className="projects-hidden-cont">
         <div 
           className="project-title" 
           style={REMOVE_OPACITY} 
           onMouseEnter={handleProjectOn} 
           onMouseLeave={handleProjectOff}
+          onClick={showModal}
         >
           {title}
         </div>
