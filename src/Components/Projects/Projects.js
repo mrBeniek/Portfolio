@@ -6,7 +6,7 @@ import Frontend from './Frontend/Frontend';
 
 export const Projects = () => {
 
-  const [dropState, setDropState] = useState('fullstack');
+  const [dropState, setDropState] = useState('FULL STACK');
 
     return (
       <div id="projects-main-cont">
