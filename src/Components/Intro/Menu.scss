@@ -1,28 +1,26 @@
 @import '../../_app.scss';
 
 #menu-cont {
-  // background: red;
    display: flex;
    margin-top: 50px;
    justify-content: center;
    max-height: 140px;
    height: 100%;
    width: 100%;
-   
 }
 
 .button-std {
-   @extend .flex-middle;
-   background: linear-gradient(to right, rgba(30,60,70,1) 0%, rgba(8,30,45,1) 50%, rgba(40,70,85,1) 100%);
-   border: white solid 3px;
-   border-radius: 10px;
-   box-sizing: border-box;
-   color: white;
-   cursor: pointer;
-    font-size: 1.8em;
-    font-weight: 600;
-   margin: 23px;
-   max-width: 350px;
-   text-decoration: none;
-   width: 100%;
+  @extend .flex-middle;
+  background: linear-gradient(to right, rgba(30,60,70,1) 0%, rgba(8,30,45,1) 50%, rgba(40,70,85,1) 100%);
+  border: white solid 3px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  font-size: 1.8em;
+  font-weight: 600;
+  margin: 23px;
+  max-width: 350px;
+  text-decoration: none;
+  width: 100%;
 }

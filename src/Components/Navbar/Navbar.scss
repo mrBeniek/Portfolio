@@ -2,7 +2,6 @@
 
 #navbar-cont {
   @extend .flex-middle;
-  //#274652
   background-color: rgba(14,35,50,1);
   color: white;
   flex-direction: column;
@@ -27,7 +26,6 @@
 
 .navbar-button {
   @extend .flex-middle;
- // background-color: green;
   color: white;
   font-size: 2em;
   min-width: 300px;

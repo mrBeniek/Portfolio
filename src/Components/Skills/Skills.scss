@@ -20,7 +20,6 @@
 }
 
 #skills-coding-cont {
-//  background-color: silver;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,7 +29,6 @@
 }
 
 .skills-coding-row {
-  //background-color: blue;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -43,7 +41,6 @@
 }
 
 .skills-coding-panel {
-  //background-color: yellow;
   box-shadow: 0px 6px 19px 5px rgba(0,0,0,0.47);
   display: flex;
   flex-direction: column;
@@ -54,13 +51,11 @@
 
 .coding-icon-cont {
   @extend .flex-middle;
-  // background-color: green;
   height: 100%;
   min-height: 225px;
 }
 
 .coding-icon {
-  //background: white;
   height: auto;
   width: 150px;
   margin: 30px;

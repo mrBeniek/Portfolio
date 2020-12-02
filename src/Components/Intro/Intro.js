@@ -4,12 +4,12 @@ import { Menu } from "./Menu";
 import { Name } from "./Name";
 
 export const Intro = () => {
-  
-    return (<div id="intro-main-cont">
-      <div id="intro-cont">
-        <Name />
-        <Menu />
+    return (
+      <div id="intro-main-cont">
+        <div id="intro-cont">
+          <Name />
+          <Menu />
+        </div>
       </div>
-    </div>);
-  
+    );
 }

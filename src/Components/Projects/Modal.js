@@ -13,22 +13,19 @@ const Modal = ({visible, showModal, vid, modalData}) => {
         width={1000}
         style={{color: "white"}}
       >
-        <div className="modal-cont">
-        
-        <video
+        <div className="modal-cont">  
+          <video
             autoPlay muted loop
             className="modal-video"
           >
             <source src={vid} type="video/mp4" />
           </video>
-        
-          
           <div className="modal-text">
             {modalData.text}
           </div>
         </div>
         <div className="projects-button-cont">
-           <a 
+          <a 
             href={modalData.link}
             target="_blank" 
             rel="noopener noreferrer" 
@@ -36,21 +33,19 @@ const Modal = ({visible, showModal, vid, modalData}) => {
           >
             DEMO
           </a>
-          {modalData.githubLink && 
-            <a 
-              href={modalData.githubLink}
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="projects-button"
-            >
-              KOD ŹRÓDŁOWY
-            </a>
+          {modalData.githubLink  
+            &&  <a 
+                  href={modalData.githubLink}
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="projects-button"
+                >
+                  KOD ŹRÓDŁOWY
+                </a>
           }
-          
         </div>
       </AntdModal>
     </React.Fragment>
-    
   )
 }
 

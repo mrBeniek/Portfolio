@@ -13,7 +13,6 @@ const ProjectTile = ({title, tileImg, vid, modalData}) => {
 
   const handleProjectOn = () => {
     setProjectStatus(true);
-    console.log(projectStatus);
   };
 
   const handleProjectOff = () => {

@@ -3,17 +3,12 @@
 #intro-main-cont {
   @extend .flex-middle;
   background-image: url(../../Assets/p4.png);
-  //background-image: url(./Assets/bg1.jpg);
   background-attachment: fixed;
   height: 100vh; 
 }
 
 #intro-cont {
   @extend .flex-middle;
-  //background-color: blue;
-  //border: white solid 5px;
-  //border-top-left-radius: 100px;
-  //border-bottom-right-radius: 100px;
   flex-direction: column;
   max-height: 700px;
   width: 100%;
