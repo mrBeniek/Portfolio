@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectTile from '../ProjectTile';
 import project1img from '../../../Assets/Happy Hour thumb.png'
-import project1vid from '../../../Assets/Random Quote Generator.mp4';
+import project1vid from '../../../Assets/Happy Hour.mp4';
 import modalData from '../../../Constants/HappyHourData'
 
 const Fullstack = () => {
