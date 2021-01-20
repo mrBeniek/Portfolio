@@ -1,14 +1,11 @@
 const data = {
-  text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-   Curabitur nec aliquet lorem.
-   Mauris ligula urna, auctor nec nunc nec, mollis sollicitudin elit. Ut id lobortis ipsum.
-  Cras in risus aliquam, lacinia ex a, commodo lectus.
-   Sed aliquet, diam et lacinia iaculis, risus elit efficitur nisi, porta molestie felis erat quis lorem.
-    Maecenas rhoncus est diam, id lobortis est sagittis eu.
-     Phasellus ornare dui lectus, eu dapibus felis aliquet ut.
-      Praesent ut egestas sapien, in varius ipsum. `,
-  link: "https://vigilant-jackson-000aba.netlify.com/",
-  githubLink: "https://github.com/mrBeniek/Random-Quote-Generator"
-}
+  text: `Jest to Single Page App (SPA). Frontend zrobiony przy pomocy Reacta, React Router, antdesign.
+   Backend to: Express, MongoDB (Mongo Atlas, mongoose). 
+   Nagrania w formie mp3 przechowywane na Google Drive (z wykorzystaniem Google Drive API).
+    Obszerny opis aplikacji po kliknięciu w 'Kod Źródłowy'`,
+  link: "https://happyhourhotline.herokuapp.com/",
+  githubLink:
+    "https://www.evernote.com/shard/s413/sh/ccb49aac-18fe-362c-b39f-87f9d248c104/be4eb6aab818bcb0b73c7fd9a1d0f16d",
+};
 
-export default data
+export default data;
