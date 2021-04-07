@@ -5,7 +5,7 @@ const data = {
       Napisałem też algorytm, dzięki któremu za każdym razem wygląda jakby cytat się "losował". 
       Baza cytatów jest fetchowana. Dodatkowo cytat można tweetować.
     `,
-  link: "https://tk-quotes.netlify.app/",
+  link: "https://quotes.tomaszkarpeta.pl/",
   githubLink: "https://github.com/mrBeniek/Random-Quote-Generator",
 };
 

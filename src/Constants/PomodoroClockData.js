@@ -4,7 +4,7 @@ const data = {
       Można manualnie ustalić długość pracy i przerwy. Na jedno i drugie jest ustawiony górny limit. 
       Specjalny dźwięk informuje o początku przerwy.
     `,
-  link: "https://tk-pomodoro.netlify.app/",
+  link: "https://pomodoro.tomaszkarpeta.pl/",
   githubLink: "https://github.com/mrBeniek/Pomodoro-Clock",
 };
 

@@ -5,7 +5,7 @@ const data = {
       - to jedne z ciekawszych funkcji. 
       Dodatkowo działa bez użycia funkcji 'eval()'.
     `,
-  link: "https://tk-calculator.netlify.app/",
+  link: "https://calc.tomaszkarpeta.pl/",
   githubLink: "https://github.com/mrBeniek/Calculator",
 };
 
